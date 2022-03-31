@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+import './src/database'; // chamando o index.js(que faz a conexão dos models com o sequelize) ao startar o servidor
 import express from 'express';
 import homeRoutes from './src/routes/homeRoutes';
 
